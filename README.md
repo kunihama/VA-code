@@ -1,6 +1,6 @@
 # VA-code
 
-This directory contains codes for the article "Bayesian estimation of distributions of causes of death with verbal autopsy surveys" 
+This directory contains codes for the article "Bayesian factor models for probabilistic cause of death assessment with verbal autopsies" 
 by T. Kunihama, Z. Li, S. J. Clark and T. H. McCormick.
 
 COD.ox: code for estimtion of distributions of causes of death using the proposed model 
