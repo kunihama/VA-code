@@ -22,7 +22,7 @@ main()
 	
 	/*--- load data ---*/
 	
-	mD = loadmat("target.csv");	 	// load target data 
+	mD = loadmat("test.csv");	 	// load target data 
 	mb = loadmat("training.csv");	// load training data
 	  
 	vy0 = vy = mD[][0];
@@ -47,7 +47,7 @@ main()
 	for(l=0 ; l<L ; l++){
 	  amPsi[l] = new array[P];	 
 	  for(j=0 ; j<P ; j++)
-	    amPsi[l][j] = ones(1, J) / J; 
+	    amPsi[l][j] = ones(1, 2) / 2; 
 	}// l
 	  
 	vpi0 = meanc(vy0 .== range(0, L-1));
@@ -65,7 +65,7 @@ main()
 
 	for(l=0 ; l<L ; l++){
 	  for(j=0 ; j<P ; j++){
-		vc = zeros(1, J);
+		vc = zeros(1, 2);
 		vi = vecindex((vyt .== l) .* !mit[][j]);
 	    if(any(vi))
 		  vc = sumc( mst[vi][j] .== range(0, 1) );
@@ -104,7 +104,7 @@ main()
 
 	/*--- output ---*/
 
-	savemat("result-CI.csv", msamp);
+	savemat("result-ci.csv", msamp);
 
 	println("\n\nTime: ", timespan(time));
 }

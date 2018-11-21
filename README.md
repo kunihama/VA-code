@@ -3,11 +3,11 @@
 This directory contains codes for the article "Bayesian factor models for probabilistic cause of death assessment with verbal autopsies" 
 by T. Kunihama, Z. Li, S. J. Clark and T. H. McCormick.
 
-COD.ox: code for estimtion of distributions of causes of death using the proposed model 
+bf.ox: code for estimtion of distributions of causes of death using the proposed model 
 
-CI.ox: code for estimtion of distributions of causes of death the conditional independent model
+ci.ox: code for estimtion of distributions of causes of death the conditional independent model
 
-CMI.ox: code for estimation of conditional mutual information in the proposed model 
+association.ox: code for estimation of conditional mutual information in the proposed model 
  
 See the pdf file (description.pdf) for more detail. 
  
